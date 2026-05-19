@@ -46,20 +46,7 @@ import "./Home.css"
 //     )
 // }
 // Update the Screen
-function MyButton(){
-    const [count , setCount] = useState(0);
 
-    function TouchClick() {
-        setCount(count + 1)
-    }
-
-    return(
-
-        <button onClick={TouchClick}>
-            Clicked {count} times
-        </button>
-    )
-}
 
 
 
@@ -71,7 +58,8 @@ function Home(){
             <h1>Conditional Rendering example</h1>
             {content}
             </div>  */}
-            <MyButton />
+            {/* <MyButton />
+            <MyButton /> */}
             {/* <h1>{user.name}</h1>
             <img className="avatar"
             src={user.imageurl} alt={'Photo of' + user.name} /> */}

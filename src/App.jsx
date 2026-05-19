@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom"
 import Home from "./Pages/Home.jsx"
 import News from "./Pages/News.jsx"
 import "./styles/App.css"
+import Square from "./Pages/TicTacToe.jsx"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />
+        <Route path="/tictactoe" element={<Square />} />
       </Routes>
     </>
   )
