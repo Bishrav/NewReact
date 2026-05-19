@@ -35,6 +35,18 @@ import "./Home.css"
 //         {products.title}
 //     </li>
 // )
+// Responding to events
+
+function MyButton(){
+    function handleClick() {
+        alert("you clicked me")
+    }
+    return(
+        <button onClick={handleClick}>click me</button>
+    )
+}
+
+
 
 function Home(){
     return(
@@ -43,11 +55,11 @@ function Home(){
             <h1>Conditional Rendering example</h1>
             {content}
             </div>  */}
-
+            <MyButton />
             {/* <h1>{user.name}</h1>
             <img className="avatar"
             src={user.imageurl} alt={'Photo of' + user.name} /> */}
-            <ul>{listItems}</ul>
+            {/* <ul>{listItems}</ul> */}
             
         </>
     )
