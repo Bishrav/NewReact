@@ -1,5 +1,5 @@
 import Header from "../Section/Footer.jsx"
-
+import { useState } from "react";
 import "./Home.css"
 // const user = {
 //     name : "Ferrari",
@@ -37,14 +37,30 @@ import "./Home.css"
 // )
 // Responding to events
 
+// function MyButton(){
+//     function handleClick() {
+//         alert("you clicked me")
+//     }
+//     return(
+//         <button onClick={handleClick}>click me</button>
+//     )
+// }
+// Update the Screen
 function MyButton(){
-    function handleClick() {
-        alert("you clicked me")
+    const [count , setCount] = useState(0);
+
+    function TouchClick() {
+        setCount(count + 1)
     }
+
     return(
-        <button onClick={handleClick}>click me</button>
+
+        <button onClick={TouchClick}>
+            Clicked {count} times
+        </button>
     )
 }
+
 
 
 
