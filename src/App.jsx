@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       
-        <nav className="nav">
+        {/* <nav className="nav">
           <Link to="/">Home</Link>
           <Link to="/news">news</Link>
-        </nav>
+        </nav> */}
   
 
       <Routes>
