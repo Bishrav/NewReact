@@ -3,6 +3,7 @@ import Home from "./Pages/Home.jsx"
 import News from "./Pages/News.jsx"
 import "./styles/App.css"
 import Square from "./Pages/TicTacToe.jsx"
+import Think from "./Pages/Think.jsx"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />
         <Route path="/tictactoe" element={<Square />} />
+        <Route path="/Think" element = {<Think />} />
       </Routes>
     </>
   )
